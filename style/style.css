@@ -71,7 +71,7 @@ navbar {
 }
 .wave__story{
     display:flex;
-    background: url('/img/wave_2.svg') no-repeat fixed center;
+    background: url('../img/wave_2.svg') no-repeat fixed center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
