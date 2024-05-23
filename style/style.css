@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 navbar {
@@ -13,6 +14,11 @@ navbar {
     position: sticky;
     top: 0;
     z-index: 999;
+}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar__logo {
@@ -69,14 +75,18 @@ navbar {
     font-size: 3rem;
     padding-bottom: 1rem;
 }
-.wave__story{
+ .section__story > .wave__image{
     display:flex;
-    background: url('../img/wave_2.svg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    background-position: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section__story > .wave__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
 }
 .section__menu{
     position: absolute;
