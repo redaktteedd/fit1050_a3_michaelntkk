@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
 }
+/* style the navbar */
 
 navbar {
-    background: #1b288d;
     height:100px;
     display: flex;
     justify-content: center;
@@ -51,54 +51,124 @@ html, body {
     padding: 0 2rem;
     height: 100%;
 }
-.section__story{
-    position: relative;
-}
-.section__story blockquote{
-    padding: 20px;
-    background-color:#1B3B6E;
-    color: #fff;
-    font-size: 1.2rem;
-    position: absolute;
-    bottom: 0;
+
+
+/* styling the image */
+body > .wave__image {
+    position: fixed; /* Fix the container to the viewport */
+    top: 0;
     left: 0;
-    right: 40%;
-    z-index: 1;
-}
-.section__story blockquote p {
-    padding: 20px 20px 20px 40px;
-    text-align: justify;
-    letter-spacing: 1px;
-    line-height: 1.2;
-}
-.section__story blockquote h1{
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
- .section__story > .wave__image{
-    display:flex;
-    background-position: center;
-    align-items: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     width: 100%;
     height: 100%;
+    z-index: -1; /* Send the container to the background */
 }
 
-.section__story > .wave__image > img {
+/* Apply styles to the img element inside .wave__image */
+body > .wave__image > img {
     width: 100%;
     height: 100%;
-    object-fit: center;
+    object-fit: cover; /* Ensure the image covers the container */
 }
-.section__menu{
-    position: absolute;
-}
-.section__menu blockquote{
+
+footer {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    background-color: #00ffff;
-    font-size: 2rem;
-    margin-left: auto;
-    margin-right: 0;
     bottom: 0;
-    width: 40%;
-    box-sizing: border-box;
+    width: 100%;
+    background-color: #f1f1f1;
+    
 }
+.section__story{
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    text-align: center;
+}
+.section__story h1{
+    font-size: 4rem;
+    font-weight: 10;
+}
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
