@@ -1,73 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeaBites</title>
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-</head>
-
-<body>
-  <div class="wave__image">
-    <img src="/img/wave_2.svg" alt="wave background">
-  </div>
-  <navbar>
-    <a href="/" id="navbar__logo">Seabites</a>
-
-    <ul class="navbar__menu">
-
-      <li class="menu__item">
-        <a href="" class="menu__links">Home</a>
-      </li>
-
-      <li class="menu__item">
-        <a href="" class="menu__links">Menu</a>
-      </li>
-
-      <li class="menu__item">
-        <a href="" class="menu__links">Review</a>
-      </li>
-
-      <li class="menu__item">
-        <a href="" class="menu__links">About</a>
-      </li>
-    </ul>
-  </navbar>
-  <section class="section__story">
-    <blockquote>
-      <h1>
-        <div class="roboto-thin">
-          Welcome to Seabites
-        </div>
-      </h1>
-      <p>
-      <div class="roboto-ligh">
-        Family Run Fish and Chips Shops
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="script/app.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Seabites</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <h1>Seabites</h1>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link cs-active"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Menu </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Reservation </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Order</a>
       </div>
-      </p>
-    </blockquote>
-  </section>
-  <section class="section__menu">
-    <blockquote>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium, blanditiis dignissimos exercitationem
-      quasi excepturi facilis ut, a, commodi consequatur error voluptatibus maxime necessitatibus illum dicta ipsam
-      aliquam unde dolores.
+    </header>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+    <section id="hero-1426">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h1 class="cs-title">Welcome to Seabites</h1>
+          <p class="cs-text">classic fish and chips with modern twist</p>
+          <a href="" class="cs-button-6" aria-label="read more about us">
+            View Menu
+            <!--SVG Arrow-->
+            <svg
+              class="cs-icon"
+              aria-hidden="true"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z"
+                fill="#1A1A1A"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-    </blockquote>
+      <!-- Background Image -->
+      <picture class="cs-background">
+        <!-- svg from https://app.haikei.app/ -->
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/img/wave-1.svg"
+          alt="wave backgrounc"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
 
-  </section>
-  <footer>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus inventore perspiciatis fugit obcaecati atque
-    laudantium? Perspiciatis quos, dignissimos architecto quasi non optio nihil illo omnis? Labore molestias fugit quae
-    impedit.
-  </footer>
-</body>
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
 
+    <section id="gallery-1152">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h1 class="cs-title">Seabites</h1>
+          <p class="catchphrase">
+            "Hooked on Flavor: Dive into a Sea of Crispy Perfection and Golden
+            Crunch with Every Bite at Your Favorite Local Fish & Chips Shop,
+            Where Tradition Meets Taste!" Dine in
+            <a
+              href="https://maps.app.goo.gl/3wvmyqErSNH5RbsWA"
+              class="maps-link"
+            >
+              Chadstone, Melbourne</a
+            >
+            or delivery order.
+          </p>
+        </div>
+        <div class="cs-gallery">
+          <picture class="cs-image">
+            <!-- image taken from:https://unsplash.com/photos/fried-food-on-red-and-white-checkered-plate-YpQGo0QTshE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash 
+              Photo by Davey Gravy on Unsplash 
+            -->
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/img/davey-gravy-YpQGo0QTshE-unsplash.jpg"
+              alt="gallery"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+
+    <section id="reviews-399">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">What Others Say About us</span>
+        </div>
+        <!-- Review taken directly from the actual google review. -->
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <p class="cs-review">
+              Some of the cleanest tasting fish and chips I've ever had. And
+              passionate ownership! Kind lady ran after me down the street to
+              ensure I had my order. Must try, impressive food.
+            </p>
+            <div class="cs-flex-group">
+              <span class="cs-name"> Karl O'Leskin </span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <p class="cs-review">
+              Tried Sea Bites for the first time and would definitely come back!
+              We bought the Old School pack and the Grilled pack to take home
+              and the food was fresh and delicious. The pineapple fritters were
+              to die for!
+            </p>
+            <div class="cs-flex-group">
+              <span class="cs-name"> Stepahie Quan </span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <p class="cs-review">
+              Undoubtedly one of the FINEST fish and chips I've ever tasted. The
+              fish was exceptionally fresh and crispy, devoid of any ammonia
+              taste or odor, indicating its high quality and freshness. The
+              chips were equally impressive, boasting a delightful crispiness.
+              Furthermore, the owner's hospitality added to the overall positive
+              experience. It's safe to say that this place ranks among the top
+              contenders for the best fish and chips in Melbourne.
+            </p>
+            <div class="cs-flex-group">
+              <span class="cs-name"> Charles Ryu </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<div id="gallery-565">
+  <div class="container">
+    <picture class="cs-picture">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery9.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery9.jpg" alt="picture" class="gallery-image img1" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery10.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery10.jpg" alt="picture" class="gallery-image img2" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery11.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery11.jpg" alt="picture" class="gallery-image img3" width="480" height="549">
+    </picture>
+  </div>
+</div>
+                              
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-108">
+      <div class="cs-container">
+        <ul class="cs-ul">
+          <li class="cs-li">
+            <a href="" class="cs-link">Home</a>
+          </li>
+          <li class="cs-li">
+            <a href="" class="cs-link">About</a>
+          </li>
+          <li class="cs-li">
+            <a href="" class="cs-link">Services</a>
+          </li>
+          <li class="cs-li">
+            <a href="" class="cs-link">Gallery</a>
+          </li>
+          <li class="cs-li">
+            <a href="" class="cs-link">Contact</a>
+          </li>
+        </ul>
+        <h1 class="footer-title"> We look forward to serving you</h1>
+        <h1 class="title"> Seabites </h1>
+        <span class="cs-copyright">© 2024 Copyright</span>
+        
+      </div>
+    </footer>
+  </body>
 </html>
